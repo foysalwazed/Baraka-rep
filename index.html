@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barakah Courier</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
           theme: {
@@ -20,29 +22,87 @@
 <body class="bg-gray-100">
 
     <!-- Header Section -->
-    <header class="bg-white shadow-md p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold text-red-600">Barakah</div>
-            <div>
-                <a href="#" class="text-gray-700 mx-4">Earn With Barakah </a>
-                <a href="#" class="text-gray-700 mx-4">Services</a>
-                <a href="#" class="text-gray-700 mx-4">Help</a>
-                <a href="#" class="text-gray-700 mx-4">Blog</a>
-                <a href="#" class="text-gray-700 mx-4">More</a>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <div>
-                <select class="border-gray-300 border rounded p-2 text-gray-600">
-                    <option>ENG</option>
-                    <option>BNG</option>
-                </select>
-            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Eran With Baraka</a></li>
+              <li>
+                <a>Service</a>
+                <ul class="p-2">
+                  <li><a>More</a></li>
+                  <li><a>Help</a></li>
+                </ul>
+              </li>
+              <li><a>Blog</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Barakah</a>
         </div>
-    </header>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Eran With Baraka</a></li>
+            <li>
+              <details>
+                <summary>Service</summary>
+                <ul class="p-2">
+                  <li><a>Help</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Help</a></li>
+                  <li><a>Blog</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>More</a></li>
+            <li><a>Help</a></li>
+            <li><a>Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
 
     <!-- Main Section -->
     <main class="container mx-auto mt-10 flex justify-between items-center">
         <!-- Text Content -->
-        <div class="w-1/2">
+
+
+
+
+        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              
+              <div>
+                <h1 class="text-5xl font-bold">No.1 Courier <br> Delivery <br> Service in Bangladesh</h1>
+                <p class="py-6">
+                    Pathao Courier is the fastest courier service near <br> you that ensures safe delivery of your product <br> right on time.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        <!-- <div class="w-1/2">
             <h1 class="text-5xl font-bold text-gray-800">No.1 Courier <br> Delivery  Service <br> in Bangladesh</h1>
             <p class="mt-6 text-gray-600">
               Barakah  Courier is the fastest courier service near <br> you that ensures safe delivery of your product <br> right on time.
@@ -51,11 +111,13 @@
                 <a href="#" class="bg-red-600 text-white px-6 py-3 rounded font-semibold mr-4">Become a Merchant</a>
                 <a href="#" class="border-2 border-gray-300 text-gray-600 px-6 py-3 rounded font-semibold">Earn with Barakah  Courier</a>
             </div>
-        </div>
+        </div> -->
+
+      
 
         <!-- Image -->
-        <div class="w-full h-100">
-          <img src="image/360_F_345664106_xRSSpkhUC7yI2lQz4pRs8j4C24LPl1IZ.jpg" alt="Delivery Person" class="w-full h-full object-cover rounded-full shadow-md">
+        <div class="w-full h-100 mx-auto mb-6  ">
+          <img src="image/360_F_345664106_xRSSpkhUC7yI2lQz4pRs8j4C24LPl1IZ.jpg" alt="Delivery Person" class="w-full h-full object-cover rounded-full shadow-md md-8 lg-5">
       </div>
     </main>
 
